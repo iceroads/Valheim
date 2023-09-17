@@ -14,7 +14,7 @@ fi
 if [ ! -f "${STEAMAPPDIR}/start_server_bepinex.sh" ]; then
 	# Are we in a valheim plus container?
 	if [ ! -z "$VALHEIM_PLUS_VERSION" ]; then
-		wget --max-redirect=30 -qO- https://github.com/valheimPlus/ValheimPlus/releases/download/"${VALHEIM_PLUS_VERSION}"/UnixServerRenamed.tar.gz | tar xvzf - -C "${STEAMAPPDIR}"
+		wget --max-redirect=30 -qO- https://github.com/valheimPlus/ValheimPlus/releases/download/"${VALHEIM_PLUS_VERSION}"/UnixServer.tar.gz | tar xvzf - -C "${STEAMAPPDIR}"
 		chmod +x "${STEAMAPPDIR}/start_server_bepinex.sh"
 	fi
 fi
