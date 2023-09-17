@@ -8,7 +8,7 @@ LABEL maintainer="walentinlamonos@gmail.com"
 ENV STEAMAPPID 896660
 ENV STEAMAPP valheim
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
-ENV DLURL https://raw.githubusercontent.com/CM2Walki/Valheim
+ENV DLURL https://raw.githubusercontent.com/iceroads/Valheim
 
 RUN set -x \
 	# Install, update & upgrade packages
@@ -61,4 +61,4 @@ EXPOSE 2456/tcp \
 
 FROM bullseye-base AS bullseye-plus
 
-ENV VALHEIM_PLUS_VERSION 0.9.9.11
+ENV VALHEIM_PLUS_VERSION 0.9.9.17
